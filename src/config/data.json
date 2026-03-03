@@ -1,0 +1,17 @@
+[
+  {
+    "text": "우리 처음 만난 날 기억나? ✨",
+    "btn": "응, 기억나!",
+    "color": "text-primary"
+  },
+  {
+    "text": "너와 함께한 모든 순간이 나에겐 선물이었어. 🎁",
+    "btn": "나도 그래",
+    "color": "text-success"
+  },
+  {
+    "text": "나랑 평생 함께 웃고 울어줄래? 💍",
+    "btn": "YES! ❤️",
+    "color": "text-danger"
+  }
+]

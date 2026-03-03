@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./assets/fonts/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('./assets/fonts/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* 전체 적용 */
+:root {
+    font-family: 'Pretendard', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Pretendard', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Bootstrap 컴포넌트 강제 적용 */
+.btn, .card-title, .badge {
+    font-family: 'Pretendard', sans-serif !important;
+}

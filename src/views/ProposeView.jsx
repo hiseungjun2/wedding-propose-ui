@@ -38,7 +38,7 @@ const ProposeView = () => {
   };
 
   return (
-    <div className="vw-100 vh-100 d-flex align-items-center justify-content-center px-3" style={{ overflow: 'hidden', backgroundColor: '#fff5f7' }}>
+    <div className="vw-100 d-flex align-items-center justify-content-center px-3" style={{ height: '100dvh', overflow: 'hidden', backgroundColor: '#fff5f7', position: 'fixed', top: 0, left: 0 }}>
       <CherryBlossoms count={40} />
 
       {isFinished && (

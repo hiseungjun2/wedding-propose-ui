@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "personal-project-5976e"
-  }
+  },
+  "targets": {
+    "personal-project-5976e": {
+      "hosting": {
+        "wedding-propose-app": [
+          "hiseungjun2-wedding-propose-ui"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

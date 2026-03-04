@@ -23,14 +23,14 @@ const variants = {
   }
 };
 
-const MotionDiv = ({ children, type = 'fadeUp', className = '', ...props }) => {
+const MotionDiv = ({ children, type = 'fadeUp', className = '', transition, ...props }) => {
   return (
     <motion.div
       variants={variants[type]}
       initial="initial"
       animate="animate"
       exit="exit"
-      transition={{ duration: 0.4 }}
+      transition={transition || { duration: 0.4 }}
       className={className}
       {...props}
     >

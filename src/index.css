@@ -1,29 +1,88 @@
 @font-face {
-    font-family: 'Pretendard';
-    src: url('./assets/fonts/Pretendard-Regular.woff2') format('woff2');
+    font-family: 'NanumBarunPen';
+    src: url('./assets/fonts/NanumBarunpenR.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('./assets/fonts/Pretendard-Bold.woff2') format('woff2');
+    font-family: 'NanumBarunPen';
+    src: url('./assets/fonts/NanumBarunpenB.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 /* 전체 적용 */
 :root {
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'NanumBarunPen', sans-serif !important;
+    --primary-rose: #ff85a2;
+    --deep-rose: #d63384;
+    --soft-charcoal: #4a4a4a;
+    --muted-gray: #7a7a7a;
+    --bg-pink: #fff5f7;
 }
 
 body {
     margin: 0;
-    font-family: 'Pretendard', sans-serif;
+    font-family: 'NanumBarunPen', sans-serif !important;
     -webkit-font-smoothing: antialiased;
+    color: var(--soft-charcoal);
+    background-color: var(--bg-pink);
+    /* 텍스트 선택 방지 및 커서 고정 */
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: 'NanumBarunPen', sans-serif !important;
+    color: var(--soft-charcoal);
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    cursor: default;
+}
+
+p, span, div {
+    font-family: 'NanumBarunPen', sans-serif !important;
+    cursor: default;
+}
+
+/* 버튼 및 인터랙티브 요소는 커서 유지 */
+.btn, button, a {
+    cursor: pointer !important;
+}
+
+[style*="cursor: zoom-in"] {
+    cursor: zoom-in !important;
+}
+
+[style*="cursor: zoom-out"], .image-modal-backdrop {
+    cursor: zoom-out !important;
 }
 
 /* Bootstrap 컴포넌트 강제 적용 */
 .btn, .card-title, .badge {
-    font-family: 'Pretendard', sans-serif !important;
+    font-family: 'NanumBarunPen', sans-serif !important;
+}
+
+.btn-primary-rose {
+    background-color: var(--primary-rose);
+    border-color: var(--primary-rose);
+    color: white;
+}
+
+.btn-primary-rose:hover {
+    background-color: #ff6b8e;
+    border-color: #ff6b8e;
+    color: white;
+}
+
+.text-rose {
+    color: var(--deep-rose) !important;
+}
+
+.text-charcoal {
+    color: var(--soft-charcoal) !important;
 }
